@@ -62,7 +62,7 @@ MY_CFLAGS =
 MY_LIBS   =
 
 # The pre-processor options used by the cpp (man cpp for more).
-CPPFLAGS  = -Wall
+CPPFLAGS  = -Wall --std=c++0x
 
 # The options used in linking as well as in any direct use of ld.
 LDFLAGS   =
@@ -73,7 +73,7 @@ SRCDIRS   =.
 
 # The executable file name.
 # If not specified, current directory name or `a.out' will be used.
-PROGRAM   =test
+PROGRAM   =acm
 
 ## Implicit Section: change the following only when necessary.
 ##==========================================================================
@@ -95,6 +95,7 @@ CXXFLAGS= -g -O2
 
 # The C++ program compiler.
 #CXX    = g++
+#CXX    = clang++
 
 # Un-comment the following line to compile C programs as C++ ones.
 #CC     = $(CXX)
